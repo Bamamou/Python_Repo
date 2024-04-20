@@ -43,3 +43,21 @@ print("The average element in A is: ", A.mean())
 print("The sum of each colunm in  B is: ", B.sum(axis =0))
 print("The sum of each row in  B is: ", B.sum(axis =1))
 print("The cumulative sum of the elements along each row", B.cumsum(axis=1))
+
+"""  Universal function """
+print("This axis contains elemets: ", np.any(arr1, axis=0))
+print("If all the element according to the axis are all greather than 0: ", np.all(arr2, axis=1))
+print("The position of the maximum value in arr3 along the column is :", np.argmax(arr2, axis=0))
+print("The position of the maximum value in arr3 along the rows is :", np.argmax(arr2, axis=1))
+print("The position of the minimum  value in arr3 along the rows is :", np.argmin(arr2, axis=1))
+
+arr4 = np.array([[5, 3, 4, 9],[0, 3, 1, 4]])
+print("the indices of arr4 after sorting would be: ", np.argsort(arr4))
+print("arr4 sorted would be: ", np.sort(arr4))
+print("sort arr4 along the conlunm: ", np.sort(arr4, axis=0))
+print("the avg of the element in arr4 is: ", np.average(arr4))  # Sum of all the elements in the arry divided by the number of elements in the arry
+print("The average along the rows is :", np.average(arr4, axis=1))
+print("The average along the colunms is :", np.average(arr4, axis=0))
+print("The number of occurence of each element in the first row of arr4 is: ", np.bincount(arr4[0]))
+print("The number of ocurrence of each element in arr1 is :", np.bincount(arr1))
+
